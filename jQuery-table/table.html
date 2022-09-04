@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jqc-1.12.4/dt-1.12.1/b-2.2.3/sl-1.4.0/datatables.min.js"></script>
+    <script type="text/javascript" src="Editor-2.0.8/js/dataTables.editor.js"></script>
     <!-- Bootstrap CSS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="/jQuery-table/style.css">
@@ -17,13 +19,16 @@
 
  
 <div class="container">
-    <div class="nav-bar">
-      <h2>Product Store</h2>
-    </div>
-    <div class="btnPosition">
-      <button id="myBtn">+ Add To Table</button>
 
+    <div class="topnav">
+      <a class="active" href="#home" id="product">Product Store</a>
+      <div class="topnav-right">
+        <input type="text" name="search" id="search" class="form-control" placeholder="search for item">
+        <button id="myBtn">+ Add To Table</button>
+      </div>
     </div>
+    
+ 
 
 
 
@@ -57,7 +62,7 @@
   <br>
   
   <div class="table_section">
-    <table>
+    <table id="myTable">
         <thead>
             <tr>
                 <th>S No.</th>
