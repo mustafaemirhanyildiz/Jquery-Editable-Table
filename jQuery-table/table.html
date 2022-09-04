@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JQuery Editable Table</title>
+      <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/jQuery-table/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head >
+<body>
+
+ 
+<div class="container">
+    <div class="nav-bar">
+      <h2>Product Store</h2>
+    </div>
+    <div class="btnPosition">
+      <button id="myBtn">+ Add To Table</button>
+
+    </div>
+
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+  
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Product Details</h2>
+        </div>
+        <div class="modal-body">
+          <input type="text" name="no" class="form-control" placeholder="no">
+          <input type="file" id="fileupload">        
+          <br>
+          <input type="text" name="name" class="form-control" placeholder="name">
+          <br>
+          <input type="text" placeholder="email" name="email">
+          <br>
+          <input type="text" name="owner" class="form-control" placeholder="owner">
+          <br>
+          <label for="fileupload">Upload Image</label>
+          <br>
+          <button class="add_new" type="submit">+ Add New</button>
+  
+        </div>
+      </div>
+    
+    </div>
+  <br>
+  
+  <div class="table_section">
+    <table>
+        <thead>
+            <tr>
+                <th>S No.</th>
+                <th>Product</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Owner</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody class="tbody">
+  
+        </tbody>
+    </table>
+</div>
+
+</div>
+   <script src="/jQuery-table/index.js"></script>
+</body>
+</html>
